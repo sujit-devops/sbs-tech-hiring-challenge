@@ -38,7 +38,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "terraform_state" 
 }
 
 resource "aws_s3_bucket_public_access_block" "terraform_state" {
-  bucket                  = var.s3_bucket_id
+  bucket                  = var.bucket_name
   block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
