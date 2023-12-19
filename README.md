@@ -1,4 +1,6 @@
-<img width="440" alt="Screenshot 2023-12-20 at 12 28 28 am" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/70a44e1a-6760-443d-bb0a-45d890493aea"># SBS-tech-hiring-challenge
+<img width="440" alt="Screenshot 2023-12-20 at 12 28 28 am" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/70a44e1a-6760-443d-bb0a-45d890493aea">
+
+# SBS-tech-hiring-challenge
 
 ####  Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. 
 The solution should be self-healing, fault-tolerant as much as possible.
@@ -17,6 +19,3 @@ Launch the HTML page that contains the SBS World Cup Image in addition to the me
   4. Dynamo DB to handle lock file
   5. Load Balancer to Distribute the traffic
   6. Auto scaling group used for to increase the scaled based on demand!
-
-#### Image Uploaded
-[Uploading Screenshot 2023-12-20 at 12.28.28 am.png…]()
