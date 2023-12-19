@@ -9,7 +9,7 @@ Web-Server: Linux OS
 #### Expected Output
 Launch the HTML page that contains the SBS World Cup Image in addition to the message “Date on Webserver IP Address {PRIVATE_IP_ADDRESS} is {YEAR/MONTH/DATE HOUR:MIN:SECS}”
 
-#### Infrastructure Usage: 
+#### Infrastructure Usage 
    1. Usage of Netwoking Services <br />
       VPC, Security Group, Subnets, IGW
    2. IAM profile used for accessing compute with S3
