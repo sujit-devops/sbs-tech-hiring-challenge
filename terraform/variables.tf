@@ -1,50 +1,49 @@
-variable "region" {
-  description = "AWS region"
+variable "bucket_name" {
+  description = "The name of the S3 bucket"
 }
 
-// VPC variables
-variable "vpc_cidr_block" {
-  description = "CIDR block for the VPC"
+variable "table_name" {
+  description = "The name of the DynamoDB table"
 }
 
-variable "subnet1_cidr_block" {
-  description = "CIDR block for Subnet1"
+variable "cidr_block" {
+  description = "The CIDR block for the VPC"
 }
 
-variable "availability_zone" {
-  description = "Availability Zone for Subnet1"
+variable "vpc_id" {
+  description = "The ID of the VPC"
 }
 
-// EC2 variables
-variable "ami" {
-  description = "AMI ID for the instances"
+variable "subnet_id" {
+  description = "The ID of the subnet"
 }
 
-variable "instance_type" {
-  description = "Instance type for the instances"
+variable "subnet_a_id" {
+  description = "The ID of the subnetA"
 }
 
-variable "key_name" {
-  description = "Key pair name for SSH access"
+variable "security_group_id" {
+  description = "The ID of the security group"
 }
 
-variable "user_data" {
-  description = "User data script for EC2 instances"
+variable "iam_instance_profile_name" {
+  description = "The name of the IAM instance profile"
 }
 
-// Load Balancer variables
-variable "target_group_port" {
-  description = "Port for the target group"
+variable "launch_configuration_name" {
+  description = "The name of the launch configuration"
 }
 
-variable "target_group_protocol" {
-  description = "Protocol for the target group"
+variable "vpc_zone_identifiers" {
+  type        = list(string)
+  description = "A list of subnet IDs to launch resources in"
 }
 
-variable "listener_port" {
-  description = "Port for the load balancer listener"
+variable "subnet_ids" {
+  type        = list(string)
+  description = "A list of subnet IDs to attach to the load balancer"
 }
 
-variable "listener_protocol" {
-  description = "Protocol for the load balancer listener"
+variable "target_group_arn" {
+  description = "The ARN of the target group"
 }

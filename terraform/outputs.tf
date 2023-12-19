@@ -1,19 +1,34 @@
+output "subnet_a_id" {
+  value = aws_subnet.subnet_a.id
+}
+output "subnet_b_id" {
+  value = aws_subnet.subnet_b.id
+}
+
 output "vpc_id" {
-  value = module.vpc.vpc_id
+  value = aws_vpc.my_vpc.id
+}
+ 
+output "security_group_id" {
+  value = aws_security_group.web_sg.id
 }
 
-output "subnet1_id" {
-  value = module.vpc.subnet1_id
+output "bucket_name" {
+  value = aws_s3_bucket.terraform_state.id
 }
 
-output "web_server_instance_id" {
-  value = module.ec2.web_server_instance_id
+output "launch_configuration_name" {
+  value = aws_launch_configuration.web_lc.name
 }
 
-output "load_balancer_dns" {
-  value = module.load_balancer.load_balancer_dns
+output "dynamodb_table_arn" {
+  value = aws_dynamodb_table.terraform_lock.arn
 }
 
-output "website_bucket_url" {
-  value = module.s3.website_bucket_url
+output "target_group_arn" {
+  value = aws_lb_target_group.web_target_group.arn
+}
+
+output "iam_instance_profile_name"{
+  value = aws_iam_instance_profile.s3_ec2_profile.name
 }
