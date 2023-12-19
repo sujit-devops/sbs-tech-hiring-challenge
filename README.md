@@ -10,12 +10,12 @@ Web-Server: Linux OS
 Launch the HTML page that contains the SBS World Cup Image in addition to the message “Date on Webserver IP Address {PRIVATE_IP_ADDRESS} is {YEAR/MONTH/DATE HOUR:MIN:SECS}”
 
 #### Infrastructure Usage: 
-   1. Usage of Netwoking Services 
+   1. Usage of Netwoking Services <br />
       VPC, Security Group, Subnets, IGW
    2. IAM profile used for accessing compute with S3
-   3. S3 Bucket 
-     - To store terraform backend file
-     - To store the static website.
+   3. S3 Bucket <br /> 
+     --> To store terraform backend file. <br /> 
+     --> To store the static website. <br /> 
    4. Dynamo DB to handle lock file mechanism
    5. Application Load Balancer to Distribute the traffic
    6. Auto scaling group used to increase or decrease based on the demand
@@ -28,7 +28,8 @@ Usage .tf tile
    4. variables
 
 #### Git Operations
-  1. Using .gitignore to ignore the *.tfstate, *.tfstate.* files
-  2. Updated the latest code in feature-modules-terraform branch.
-  3. Will only be pushing to main branch once the approver will approve the code.
-  4. Should follow the PR process to merge to main.
+   1. Using .gitignore to ignore the *.tfstate, *.tfstate.* files
+   2. main branch has rough code to provision with infrastructure but lacks code re-usability
+   3. Updated the latest code in feature-modules-terraform branch.
+   4. Will only be pushing to main branch once the approver will approve the code.
+   5. Should follow the PR process to merge to main branch.
