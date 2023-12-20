@@ -1,7 +1,13 @@
 # Product Architecture
-<img width="200" alt="Screenshot 2023-12-20 at 9 01 27 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/b511f2c0-dfd1-4f1d-8caa-1624815f339c"> <br/>
+
+<img width="720" alt="Screenshot 2023-12-21 at 7 57 42 am" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/c780a305-57df-4f4f-97fc-377d9050d88d">
+
+
+
+
 
 In this project, I developed a streamlined infrastructure for hosting a static website using Amazon Web Services (AWS) S3 and CloudFront. The primary goal of this project is to demonstrate the automated provisioning and deployment of a web hosting solution for static websites.
+AWS Lambda will pull the data from S3 and add the current ip address and date timestamp to the image. <br/>
 
 # Expected Result
 <img width="720" alt="Screenshot 2023-12-19 at 4 07 42 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/3ec748a8-68df-4879-86f0-f1f38553ac4e"> <br/>
