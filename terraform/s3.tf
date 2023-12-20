@@ -53,7 +53,7 @@ resource "aws_s3_bucket_acl" "my-static-website" {
 }
 
 resource "aws_s3_bucket_policy" "my-static-website" {
-  bucket = aws_s3_bucket.this.id
+  bucket = aws_s3_bucket.my-static-website.id
   policy = <<EOF
   {
     "Version": "2012-10-17",
@@ -67,7 +67,7 @@ resource "aws_s3_bucket_policy" "my-static-website" {
         "Resource": "${aws_s3_bucket.my-static-website.arn}/*",
         "Condition": {
             "StringEquals": {
-                "AWS:SourceArn": "${aws_cloudfront_distribution.my-static-website.arn}"
+                "AWS:SourceArn": "${aws_cloudfront_distribution.cdn_static_site.arn}"
             }
         }
     }
@@ -76,7 +76,7 @@ resource "aws_s3_bucket_policy" "my-static-website" {
 }
 
 resource "aws_s3_object" "image_object" {
-  bucket  = aws_s3_bucket.my-static-website.bucket
+  bucket  = aws_s3_bucket.my-static-website.id
   key    = "sbs-world-cup-image"
   acl    = "public-read"  # To make the object public
   source = "/Users/sujit/sbs-tech-hiring-challenge-sample/sbs-world-cup.jpeg"

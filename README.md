@@ -21,7 +21,7 @@ The Solution should be self-healing, fault-tolerant as much as possible, and mus
 Aim of the solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
 
 Infra used:  <br/>
-  - CloudFront distribution + private S3 bucket <br/>
+  - CloudFront distribution + private S3 bucket + Lambda <br/>
   - Advantage: easy to implement, private s3 bucket, cache for static files <br/>
 
 ## Key Components and Features:
