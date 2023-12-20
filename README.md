@@ -12,7 +12,6 @@ In this project, I developed a streamlined infrastructure for hosting a static w
 Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. <br/>
 The Solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
 
-Web-Server: Linux OS <br/>
 Aim of the solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
 
 Infra used:  <br/>
@@ -63,6 +62,7 @@ If we want to Create a terraform configuration file we have to use .tf (e.g., ma
 3. After navigating to the directory where your configuration files are located in your IDE's terminal, you can run the following command to initialize Terraform and prepare it for use with AWS:<br/>
 terraform init <br/>
 terraform plan <br/>
+terraform apply <br/>
 Running terraform init will install the necessary plugins and modules required for connecting to AWS and managing your infrastructure.<br/>
 
 4. And then define backend.tf, cloudfront.tf, dynamodb_table.tf, s3.tf file for creating the required infra as discussed at the beginning.
