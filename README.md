@@ -9,13 +9,15 @@ In this project, I developed a streamlined infrastructure for hosting a static w
 
 # SBS-tech-hiring-challenge Approach 3
 
-Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. 
-The Solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute.
-Web-Server: Linux OS
-Aim of the solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute.
-Infra used: 
-  - CloudFront distribution + private S3 bucket
-  Advantage: easy to implement, private s3 bucket, cache for static files
+Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. <br/>
+The Solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
+
+Web-Server: Linux OS <br/>
+Aim of the solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
+
+Infra used:  <br/>
+  - CloudFront distribution + private S3 bucket <br/>
+  - Advantage: easy to implement, private s3 bucket, cache for static files <br/>
 
 ## Key Components and Features:
 Terraform Infrastructure as Code (IaC):
