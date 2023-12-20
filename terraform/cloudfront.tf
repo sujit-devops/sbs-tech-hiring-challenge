@@ -48,6 +48,7 @@ resource "aws_cloudfront_origin_access_control" "default" {
   signing_protocol                  = "sigv4"
 }
 
+# Output the CloudFront URL
 output "cloudfront_url" {
   value = aws_cloudfront_distribution.cdn_static_site.domain_name
 }
