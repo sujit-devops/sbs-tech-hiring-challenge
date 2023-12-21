@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"  # Change to your preferred AWS region
-}
-
 resource "aws_lambda_function" "modify_image_lambda" {
   function_name = "modifyImageLambda"
   handler      = "lambda_handler.lambda_handler"
