@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "cdn_static_site" {
   enabled             = true
   is_ipv6_enabled     = true
-  default_root_object = "index.html"
+  default_root_object = "sbs-world-cup-image"
   comment             = "my cloudfront in front of the s3 bucket"
 
   origin {

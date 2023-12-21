@@ -6,7 +6,7 @@ resource "aws_lambda_function" "modify_image_lambda" {
   function_name = "modifyImageLambda"
   handler      = "lambda_handler.lambda_handler"
   runtime      = "python3.8"
-  filename     = "/Users/sujit/sbs-tech-hiring-challenge/terraform/lambda_function.zip"  # Replace with the actual path to your Lambda function code
+  filename     = "/Users/sujit/sbs-tech-hiring-challenge/terraform/lambda_function.zip" 
   role         = aws_iam_role.lambda_execution_role.arn
   timeout      = 10
 }

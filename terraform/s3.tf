@@ -79,5 +79,7 @@ resource "aws_s3_object" "image_object" {
   bucket  = aws_s3_bucket.my-static-website.id
   key    = "sbs-world-cup-image"
   acl    = "public-read"  # To make the object public
+  content_type = "image/jpeg"
   source = "/Users/sujit/sbs-tech-hiring-challenge-sample/sbs-world-cup.jpeg"
+  content_disposition = ""  # Set to an empty string
 }
