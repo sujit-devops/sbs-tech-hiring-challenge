@@ -14,7 +14,9 @@ AWS Lambda will pull the data from S3 and add the current ip address and date ti
 <img width="720" alt="Screenshot 2023-12-19 at 4 07 42 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/3ec748a8-68df-4879-86f0-f1f38553ac4e"> <br/>
 
 
-# SBS-tech-hiring-challenge Approach 3
+# SBS-tech-hiring-challenge
+
+### Serverless Approach 2
 
 Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. <br/>
 The Solution should be self-healing, fault-tolerant as much as possible, and must make use of server-less offerings from AWS for compute. <br/>
