@@ -75,8 +75,9 @@ Running terraform init will install the necessary plugins and modules required f
 4. And then define backend.tf, cloudfront.tf, dynamodb_table.tf, s3.tf file for creating the required infra as discussed at the beginning.
 
 terraform apply -auto-approve
-The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket, create CDN distribution.
+The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket, create CDN distribution. <br/>
 
-
+5. Below is cloudfront url to access the website
+<img width="720" alt="Screenshot 2023-12-21 at 9 56 21 am" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/739aedb5-d16b-4d22-8738-bcb7a93172f5">
 
   
