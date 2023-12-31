@@ -1,4 +1,5 @@
-<img width="440" alt="Screenshot 2023-12-20 at 12 28 28 am" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/70a44e1a-6760-443d-bb0a-45d890493aea">
+
+<img width="1000" alt="Screenshot 2023-12-31 at 7 52 03 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/15207860-3d5e-4067-8384-f6afee4ae947">
 
 # SBS Tech Hiring Challenge 
 
