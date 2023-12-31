@@ -91,7 +91,7 @@ The code above will apply the necessary configurations for features such as stat
    
 
 ####  Output
-Below is the Cloudfront and API Gateway URL output after running the terraform apply to access the website.
+Below is the Cloudfront and API Gateway URL output from VS code after running the terraform apply to access the website.
 
 <img width="1000" alt="Screenshot 2023-12-31 at 8 41 59 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge-v1/assets/29218570/3e8dd082-1f63-4e49-86ca-5c110383fb90">
 
