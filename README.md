@@ -84,6 +84,11 @@ Running terraform init will install the necessary plugins and modules required f
 terraform apply -auto-approve
 The code above will apply the necessary configurations for features such as static website hosting, bucket policies, and blocking public access to your bucket, create CDN distribution. <br/>
 
+#### Git Operations
+1. Using .gitignore to ignore the *.tfstate, .tfstate. files <br/>
+2. Will only be pushing to main branch once the approver will approve the code. <br/>
+3. Should follow the PR process to merge to main branch.
+   
 
 ####  Output
 Below is the Cloudfront and API Gateway URL output after running the terraform apply to access the website.
