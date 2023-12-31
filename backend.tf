@@ -1,19 +1,20 @@
 
+/*
 terraform {
   backend "s3" {
-    bucket         = "jshsflaksjflwffjfsuji-terraform-state"
+    bucket         = "jshsflaksjflwffjfsuji1112-terraform-state"
     key            = "Users/sujit/sbs-tech-hiring-challenge-sample/terraform/terraform.tfstate"
     encrypt        = true
     region         = "us-east-1"
     dynamodb_table = "dynamodb-state-locking"
   }
 }
-
+*/
 
 
 ################ Create S3 bucket to store terraform state ################ 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "jshsflaksjflwffjfsuji-terraform-state"
+  bucket = "jshsflaksjflwffjfsuji1112-terraform-state"
 
   tags = {
     Name        = "My bucket"
@@ -52,4 +53,3 @@ resource "aws_s3_bucket_public_access_block" "terraform_state" {
   restrict_public_buckets = true
   depends_on = [ resource.aws_s3_bucket.terraform_state ]
 }
-

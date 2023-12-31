@@ -1,0 +1,26 @@
+/* main.js */
+
+function get_data () {
+        
+    // define our API gateway here...
+    var url = "${ api_gw_url }";
+    var str = "";
+
+    // use jquery ajax function to get our data...
+    //
+    $.ajax({
+        url: url, 
+        dataType: 'json',
+        data: '',
+        crossDomain: true,
+        success: function(result) {
+            
+            console.log (JSON.stringify(result));
+            
+            str = "Date on Webserver " + result.ip + " is " + result.date;
+            $("#data_string").html(str);
+            
+        }
+    });
+       
+}

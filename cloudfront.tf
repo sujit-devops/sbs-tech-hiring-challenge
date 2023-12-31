@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "cdn_static_site" {
   enabled             = true
   is_ipv6_enabled     = true
-  default_root_object = "sbs-world-cup-image.jpeg"
+  default_root_object = "index.html"
   comment             = "my cloudfront in front of the s3 bucket"
 
   origin {
@@ -41,7 +41,7 @@ resource "aws_cloudfront_distribution" "cdn_static_site" {
 }
 
 resource "aws_cloudfront_origin_access_control" "default" {
-  name                              = "cloudfront OAC"
+  name                              = "cloudfront_OAC"
   description                       = "description of OAC"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
