@@ -1,7 +1,7 @@
+# SBS TECH HIRING CHALLENGE LAB
 
+## Expected Result
 <img width="1000" alt="Screenshot 2023-12-31 at 7 52 03 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/15207860-3d5e-4067-8384-f6afee4ae947">
-
-# SBS Tech Hiring Challenge 
 
 ### Legacy Approach
 
