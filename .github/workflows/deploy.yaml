@@ -22,7 +22,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.6.6 
-      - run: cd ../../terraform/
+      - run: cd /Users/sujit/sbs-tech-hiring-challenge/terraform
 
       - name: Terraform Init
         run: terraform init
