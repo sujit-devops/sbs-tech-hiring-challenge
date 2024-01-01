@@ -1,6 +1,8 @@
+# SBS TECH HIRING CHALLENGE
+
 <img width="1000" alt="Screenshot 2023-12-31 at 7 52 03 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/a995225d-fb5a-46a0-9605-c5ec04cddf76">
 
-# SBS Tech Hiring Challenge Legacy Approach 
+### Legacy Approach 
 
 ####  Deploy a Highly Available Webserver solution using a mixture of Compute, Load Balancing and other services available from AWS. 
 The solution should be self-healing, fault-tolerant as much as possible.
