@@ -1,5 +1,5 @@
 # SBS TECH HIRING CHALLENGE LAB
-
+ 
 ## Product Architecture
 <img width="1000" alt="Screenshot 2023-12-31 at 11 06 25 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge-v1/assets/29218570/33a4272b-78bb-44b8-b2f8-50135eaf1fd7">
 
