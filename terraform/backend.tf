@@ -1,15 +1,15 @@
 
-/*
+
 terraform {
   backend "s3" {
     bucket         = "jshsflaksjflwffjfsuji1112-terraform-state"
-    key            = "Users/sujit/sbs-tech-hiring-challenge-sample/terraform/terraform.tfstate"
+    key            = "Users/sujit/sbs-tech-hiring-challenge/terraform/terraform.tfstate"
     encrypt        = true
     region         = "us-east-1"
-    dynamodb_table = "dynamodb-state-locking"
+    dynamodb_table = "dynamodb-state-sp-locking"
   }
 }
-*/
+
 
 
 ################ Create S3 bucket to store terraform state ################ 

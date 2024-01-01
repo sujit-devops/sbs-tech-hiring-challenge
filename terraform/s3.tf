@@ -82,6 +82,7 @@ resource "aws_s3_object" "image_object" {
   content_type = "image/png"
   source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/sbs-world-cup.png"
   content_disposition = ""  # Set to an empty string
+  depends_on = [ aws_s3_bucket.my-static-website ]
 }
 
 resource "aws_s3_object" "index_html" {
@@ -92,6 +93,7 @@ resource "aws_s3_object" "index_html" {
   content_type = "text/html"
   source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/index.html"
   content_disposition = ""  # Set to an empty string
+  depends_on = [ aws_s3_bucket.my-static-website ]
 }
 
 resource "aws_s3_object" "main_js" {
@@ -102,4 +104,5 @@ resource "aws_s3_object" "main_js" {
   #source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/main.js" 
   #content = templatefile("main.tftpl", { api_gw_url = aws_api_gateway_deployment.MyDemoAPIDeployment.invoke_url })
   content = templatefile("main.tftpl", { api_gw_url = "${aws_api_gateway_deployment.MyDemoAPIDeployment.invoke_url}/${var.api_gw_path_var}" })
+  depends_on = [ aws_s3_bucket.my-static-website ]
 }
