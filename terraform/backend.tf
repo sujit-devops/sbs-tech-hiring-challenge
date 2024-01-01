@@ -1,5 +1,5 @@
 
-
+/*
 terraform {
   backend "s3" {
     bucket         = "jshsflaksjflwffjfsuji1112-terraform-state"
@@ -9,7 +9,7 @@ terraform {
     dynamodb_table = "dynamodb-state-sp-locking"
   }
 }
-
+*/
 
 
 ################ Create S3 bucket to store terraform state ################ 

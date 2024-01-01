@@ -2,9 +2,9 @@ name:  Terraform Plan/Apply for SBS Tech Hiring Challenge
 
 on:
   push:
-    branches: [ serverless-approach ]
+    #branches: [ serverless-approach ]
   pull_request:
-    branches: [ serverless-approach ]
+    #branches: [ serverless-approach ]
 
 jobs:
   PushToAWS:
