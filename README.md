@@ -100,8 +100,8 @@ Below is the Cloudfront and API Gateway URL and output from VS code after runnin
 
 #### GitHub Actions
 Pipeline is created to automate the enitre CI/CD process. <br/>
-By pushing the code to serverless branch would trigger the terraform jobs and infrastructure would be created <br/>
-Actions output below for reference <br/>
+By pushing the code to serverless branch would trigger the terraform jobs and infrastructure would be created. <br/>
+Actions output below for reference. <br/>
 
 
 <img width="1000" alt="Screenshot 2024-01-02 at 2 38 20 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/cfabdcb3-9c20-46a7-99ac-87187a0e74b0">
