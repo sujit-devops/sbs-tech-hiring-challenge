@@ -93,10 +93,11 @@ The code above will apply the necessary configurations for features such as stat
 ####  Output
 Below is the Cloudfront and API Gateway URL and output from VS code after running the terraform apply to access the website.
 
-<img width="1000" alt="Screenshot 2024-01-01 at 4 23 18 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/9cc5a644-ceca-4b29-b029-df5cd0fef71e">
+<img width="1000" alt="Screenshot 2024-01-02 at 10 10 50 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/a750cb0a-d2f3-4ecf-9758-52ff616b6977">
 
 #### Browser result from Cloudfront URL
-<img width="1000" alt="Screenshot 2024-01-01 at 4 22 46 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/18ba942c-4913-426a-a79d-bebf7b2476f3">
+
+<img width="1000" alt="Screenshot 2024-01-02 at 10 09 10 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/46521899-6388-4360-a60f-9db9960ed8d5">
 
 #### GitHub Actions
 Pipeline is created to automate the enitre CI/CD process. <br/>
