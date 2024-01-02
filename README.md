@@ -91,15 +91,18 @@ The code above will apply the necessary configurations for features such as stat
    
 
 ####  Output
-Below is the Cloudfront and API Gateway URL output from VS code after running the terraform apply to access the website.
+Below is the Cloudfront and API Gateway URL and output from VS code after running the terraform apply to access the website.
 
 <img width="1000" alt="Screenshot 2024-01-01 at 4 23 18 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/9cc5a644-ceca-4b29-b029-df5cd0fef71e">
 
 #### Browser result from Cloudfront URL
 <img width="1000" alt="Screenshot 2024-01-01 at 4 22 46 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/18ba942c-4913-426a-a79d-bebf7b2476f3">
 
+#### GitHub Actions
+Pipeline is created to automate the enitre CI/CD process. <br/>
+By pushing the code to serverless branch would trigger the terraform jobs and infrastructure would be created <br/>
+Actions output below for reference <br/>
 
 
+<img width="1000" alt="Screenshot 2024-01-02 at 2 38 20 pm" src="https://github.com/techielife9/sbs-tech-hiring-challenge/assets/29218570/cfabdcb3-9c20-46a7-99ac-87187a0e74b0">
 
-
-  
