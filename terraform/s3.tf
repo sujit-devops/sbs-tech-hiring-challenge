@@ -44,6 +44,8 @@ resource "aws_s3_bucket_ownership_controls" "my-static-website" {
 
 resource "aws_s3_bucket_acl" "my-static-website" {
   depends_on = [
+    aws_s3_bucket.my-static-website,
+    aws_s3_bucket_website_configuration.my-static-website,
     aws_s3_bucket_ownership_controls.my-static-website,
     aws_s3_bucket_public_access_block.my-static-website,
   ]
@@ -78,9 +80,9 @@ resource "aws_s3_bucket_policy" "my-static-website" {
 resource "aws_s3_object" "image_object" {
   bucket  = aws_s3_bucket.my-static-website.id
   key    = "sbs-world-cup.png"
-  acl    = "public-read"  # To make the object public
+  #acl    = "public-read"  # To make the object public
   content_type = "image/png"
-  source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/sbs-world-cup.png"
+  source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/sbs-world-cup.png"
   content_disposition = ""  # Set to an empty string
   depends_on = [ aws_s3_bucket.my-static-website ]
 }
@@ -88,10 +90,10 @@ resource "aws_s3_object" "image_object" {
 resource "aws_s3_object" "index_html" {
   bucket  = aws_s3_bucket.my-static-website.id
   key    = "index.html"
-  acl    = "public-read"  # To make the object public
+  #acl    = "public-read"  # To make the object public
   //content_type = "image/jpeg"
   content_type = "text/html"
-  source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/index.html"
+  source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/index.html"
   content_disposition = ""  # Set to an empty string
   depends_on = [ aws_s3_bucket.my-static-website ]
 }
@@ -99,7 +101,7 @@ resource "aws_s3_object" "index_html" {
 resource "aws_s3_object" "main_js" {
   bucket  = aws_s3_bucket.my-static-website.id
   key    = "main.js"
-  acl    = "public-read"
+  #acl    = "public-read"
   content_type = "text/javascript"
   #source = "/Users/sujit/sbs-tech-hiring-challenge-v1/terraform/main.js" 
   #content = templatefile("main.tftpl", { api_gw_url = aws_api_gateway_deployment.MyDemoAPIDeployment.invoke_url })

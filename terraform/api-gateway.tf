@@ -45,7 +45,7 @@ resource "aws_api_gateway_integration_response" "MyDemoIntegrationResponse" {
   resource_id = aws_api_gateway_resource.MyDemoResource.id
   http_method = aws_api_gateway_method.MyDemoMethod.http_method
   status_code = aws_api_gateway_method_response.response_200.status_code
-  depends_on = [ aws_api_gateway_method_response.response_200, aws_api_gateway_method.MyDemoMethod, aws_api_gateway_resource.MyDemoResource, aws_api_gateway_rest_api.MyDemoAPI ]
+  depends_on = [ aws_api_gateway_integration.MyDemoIntegration, aws_api_gateway_method.MyDemoMethod, aws_api_gateway_resource.MyDemoResource, aws_api_gateway_rest_api.MyDemoAPI ]
 }
 
 
