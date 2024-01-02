@@ -1,7 +1,7 @@
 /*
 terraform {
   backend "s3" {
-    bucket         = "jshsflaksjflwffjfsuji1114-terraform-state"
+    bucket         = "jshsflaksjflwffjfsuji1116-terraform-state"
     key            = "Users/sujit/sbs-tech-hiring-challenge/terraform/terraform.tfstate"
     encrypt        = true
     region         = "us-east-1"
@@ -12,7 +12,7 @@ terraform {
 
 ################ Create S3 bucket to store terraform state ################ 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "jshsflaksjflwffjfsuji1114-terraform-state"
+  bucket = "jshsflaksjflwffjfsuji1116-terraform-state"
 
   tags = {
     Name        = "My bucket"

@@ -1,7 +1,7 @@
 ################  S3 static website bucket ######################## 
 
 resource "aws_s3_bucket" "my-static-website" {
-  bucket = "my-static-website46551jaffsfwerdjdf5" # give a unique bucket name
+  bucket = "my-static-website46551jaffsfwerdjdf7" # give a unique bucket name
   tags = {
     Name = "my-static-website"
   }
