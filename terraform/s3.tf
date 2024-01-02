@@ -82,7 +82,8 @@ resource "aws_s3_object" "image_object" {
   key    = "sbs-world-cup.png"
   #acl    = "public-read"  # To make the object public
   content_type = "image/png"
-  source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/sbs-world-cup.png"
+  #source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/sbs-world-cup.png"
+  source = "sbs-world-cup.png"
   content_disposition = ""  # Set to an empty string
   depends_on = [ aws_s3_bucket.my-static-website ]
 }
@@ -93,7 +94,8 @@ resource "aws_s3_object" "index_html" {
   #acl    = "public-read"  # To make the object public
   //content_type = "image/jpeg"
   content_type = "text/html"
-  source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/index.html"
+  #source = "/Users/sujit/sbs-tech-hiring-challenge/terraform/index.html"
+  source = "index.html"
   content_disposition = ""  # Set to an empty string
   depends_on = [ aws_s3_bucket.my-static-website ]
 }
