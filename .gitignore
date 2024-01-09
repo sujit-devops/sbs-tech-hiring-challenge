@@ -4,3 +4,6 @@
 ###### .tfstate files
 *.tfstate
 *.tfstate.*
+
+### store file
+.DS_Store
